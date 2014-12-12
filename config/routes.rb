@@ -5,14 +5,13 @@ Bookhub::Application.routes.draw do
 
   end
 
+  get "/home"  ,:controller=>"home",:action =>"home"
+  get "/home/home"  =>redirect("/home"), :controller=>"home",:action =>"home"
+  get "home/bestresources",:controller=>"home",:action=>"bestresources"
+  match "/home/jobprofile" ,:controller=>"home",:action=>"jobprofiles", :as => :jobprofile
+  get "/home/jobnews",:controller=>"home",:action=>"jobnews"
+  get"/home/download",:controller=>"home",:action=>"download"
 
-  get "/home/" ,  :controller=>"home",:action =>"home"
-  get "/home/home" =>redirect("/home")
-  get "/home/aboutus"
-  get "/home/contactus" => redirect("/home/assignment")
-  get"/home/show",:controller=>"home",:action=>"show"
-  get "projects/new"
-  get "/home/assignment"
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -59,7 +58,7 @@ Bookhub::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   #
-  #root :to =>'home#home'
+  root :to =>'home#home'
 
   # See how all your routes lay out with "rake routes"
 

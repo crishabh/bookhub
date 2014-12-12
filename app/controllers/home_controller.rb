@@ -2,19 +2,19 @@ class HomeController < ApplicationController
   def home
 
   end
-  def aboutus
+  def jobnews
 
   end
   def contactus
 
   end
-  def assignment
+  def jobprofiles
 
   end
-  def sign_up
+  def bestresources
 
   end
-  def show
+  def download
 
   end
 end
