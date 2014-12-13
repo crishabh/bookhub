@@ -1,14 +1,45 @@
-<body>
-<div class="header"><h1>Hundreds of Free <br>Manufacture Drug Coupons </h1>
 
+<div id="front">
+  <div class="site-header">
 
-  <%= link_to 'HOME ', home_home_path %>
-  <%= link_to 'Contact Us', home_contactus_path %>
-  <%= link_to 'Assignment', home_assignment_path %>
-  <%= link_to 'Show',home_show_path %>
-  <div>
-    <p>FOR PRESCRIPTION DRUGS AND NON-PRESCRIPTION DRUGS -<br> 100% FREE - ONLINE SINCE 2007 - NO ANNOYING SIGN- INS!</p>
-    <input id="bar" type="text" placeholder="Search Drug Coupons"> <input type="submit" id="search-submit">
-  </div>
-</div>
-</body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div id="templatemo_logo">
+            <h1><a href="#" >BOOKHUB</a></h1>
+          </div> <!-- /.logo -->
+        </div> <!-- /.col-md-4 -->
+        <div class="col-md-8 col-sm-6 col-xs-6">
+          <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+          <div class="homenav" >
+            <ul>
+              <li><%= link_to 'HOME', home_home_path, :target => "_blank" %></li>
+              <li><%= link_to 'Best Resources',home_bestresources_path%></li>
+              <li><%= link_to 'Job Profiles', jobprofile_path, :target => "_blank" %></li>
+              <li><%= link_to 'Job News', home_jobnews_path %> </li>
+              <li><%= link_to 'Download', home_download_path %></li>
+            </ul>
+          </div> <!-- /.main-menu -->
+        </div> <!-- /.col-md-8 -->
+      </div> <!-- /.row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="responsive">
+            <div class="main-menu">
+              <ul>
+                <li><a href="#jobprofiles">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /.container -->
+  </div> <!-- /.site-header -->
+</div> <!-- /#front -->
+<%= render :partial=>"home/slider" %>
+<%= render :partial=>"home/jobprofiles"%>
+<%= render :partial=>"home/new_products"%>
+<%= render :partial=>"home"%>
