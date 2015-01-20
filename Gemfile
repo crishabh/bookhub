@@ -19,7 +19,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'thinking-sphinx', '~> 3.1.0'
 gem 'jquery-rails', '~> 2.0'
 
 # To use ActiveModel has_secure_password
