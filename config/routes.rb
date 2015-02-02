@@ -5,12 +5,12 @@ Bookhub::Application.routes.draw do
 
   end
 
-  get "/home"  ,:controller=>"home",:action =>"home"
+  get "/home" , :controller=>"home",:action =>"home"
   get "/home/home"  =>redirect("/home"), :controller=>"home",:action =>"home"
-  get "home/bestresources",:controller=>"home",:action=>"bestresources"
-  match "/home/jobprofile" ,:controller=>"home",:action=>"jobprofiles", :as => :jobprofile
-  get "/home/jobnews",:controller=>"home",:action=>"jobnews"
-  get"/home/download",:controller=>"home",:action=>"download"
+  get "/bestresources",:controller=>"home",:action=>"bestresources"
+  match "/jobprofile" ,:controller=>"home",:action=>"jobprofiles", :as => :jobprofile
+  get "/jobnews",:controller=>"home",:action=>"jobnews"
+  get"/download",:controller=>"home",:action=>"download"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bandname: MyString
+  origin: MyString
+  founded_in: 1
+
+two:
+  bandname: MyString
+  origin: MyString
+  founded_in: 1
