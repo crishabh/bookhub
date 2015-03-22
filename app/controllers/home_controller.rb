@@ -17,4 +17,10 @@ class HomeController < ApplicationController
   def download
 
   end
+ def sd
+
+ end
+ def ds
+ end
+
 end
